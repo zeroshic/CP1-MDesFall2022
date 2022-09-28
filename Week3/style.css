@@ -9,21 +9,26 @@
   
   /* Style the header */
   .header {
-    padding: 80px;
+    padding: 10%;
     text-align: center;
-    background: #1abc9c;
+    text-size-adjust: 0;
+    background: black;
     color: white;
+    background-image: url('https://raw.githubusercontent.com/zeroshic/Creative-Proto-Wk2/main/Test%20Image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: Center;
+    background-size: cover;
   }
-  
+
   /* Increase the font size of the h1 element */
   .header h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
-  
+
   /* Style the top navigation bar */
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
   }
   
   /* Style the navigation bar links */
@@ -32,13 +37,21 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
     text-decoration: none;
   }
   
+ /* left-aligned link */
+ .navbar a.left {
+    float: left;
+    padding: 9px 20px;
+  }
+
   /* Right-aligned link */
   .navbar a.right {
     float: right;
+    padding: 14px 20px;
+    font-weight: bold;
+    font-size: small;
   }
   
   /* Change color on hover */
@@ -53,33 +66,115 @@
     flex-wrap: wrap;
   }
   
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
+  /* Image Gallery */
+  div.gallery {
+    border-radius: 25px;
+    border: 1px solid rgb(239, 239, 239);
+    box-shadow: 4px 4px 8px rgb(233, 233, 233);
   }
   
-  /* Main column */
-  .main {   
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
+  div.gallery:hover {
+    border: 1px solid rgb(214, 214, 214);
   }
   
-  /* Fake image, just for this example */
-  .fakeimg {
-    background-color: #aaa;
+  div.gallery img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     width: 100%;
-    padding: 20px;
+    height: auto;
   }
   
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: medium;
+  }
+  
+  p.sub-desc {
+    padding: 0px 40px;
+    text-align: center;
+    align-items: center;
+    font-weight: lighter;
+    font-size: small;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 16px;
+    float: left;
+    width: 33.3%;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px
+
+}
+
+.button {
+    background-color: #ffc800;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 12px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .zoom {
+    padding: 50px;
+    background-image: url('https://raw.githubusercontent.com/zeroshic/Creative-Proto-Wk2/main/Test%20Image.jpg');
+    border-radius: 25px;
+    transition: transform .2s;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
+
+
   /* Footer */
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: black;
   }
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -89,8 +184,8 @@
     }
   }
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
+  /* Responsive layout - when the screen is less than 500px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 500px) {
     .navbar a {
       float: none;
       width:100%;
