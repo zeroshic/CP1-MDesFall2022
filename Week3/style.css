@@ -3,7 +3,7 @@
   }
   
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     margin: 0;
   }
   
@@ -74,7 +74,7 @@
   }
   
   div.gallery:hover {
-    border: 1px solid rgb(214, 214, 214);
+    border: 1px solid rgb(157, 157, 157);
   }
   
   div.gallery img {
