@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patterns and movement HW</title>
-
-<link href="style.css" rel="stylesheet">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
 
   </head>
+  <body>
+    <main>
+    </main>
     <script src="sketch.js"></script>
-    <header>
-        <button role="button" id="colorChange">Click me</button>
-    </header>
+    
+    <div class="a">
+    <h1>Press/Release Mouse</h1>
+    <p>My initial objective was to create a set of 25 square boxes overlapping each other with a bit of transparency to create a gradient and add a button to change the color. However, I struggled to develop a simple math code to create multiple boxes in a row. Therefore, I made each box manually by giving a form and position element. The first script exceeded 160 lines, and I simplified it to 86. I used the PosX/PosY concept from the previous class to make it easy to adjust the positioning. As a result, I completed the box gradient reasonably fast. </p>
+
+    <p>The most challenging part was to add a button to change the color. I took the button input src from the previous class to create a random RGB number and apply it to each box fill. However, it couldn't generate the number in the new script, so I researched and found the Var option. I individually assigned r,g,b,a, combined them with a random number, and applied them to each box. Since the button wasn't working, I used the mouse press/release as an alternative to play/pause color change.</p>
+      
+    <a href="url">https://editor.p5js.org/zeroshic/full/5r3yA-GXJ</a>
+    
+    </div>
+    
   </body>
 </html>
+
 
